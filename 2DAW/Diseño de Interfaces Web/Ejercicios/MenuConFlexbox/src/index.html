@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet"
+        href="../estilos/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/fontawesome.css">
+    <link rel="stylesheet" href="../estilos/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/brands.css">
+    <link rel="stylesheet" href="../estilos/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/solid.css">
+
+    <title>Menús</title>
+</head>
+
+<body>
+    <div id="contenedorPrincipal">
+        <div>
+            <h1>Menú Sencillo</h1>
+            <div id="menu1" class="menus">
+                <span class="menu1Item">Inicio</span>
+                <span class="menu1Item">Nosotros</span>
+                <span class="menu1Item">Servicios</span>
+                <span class="menu1Item">Contacto</span>
+                <span class="menu1Item">Tienda Virtual</span>
+                <span class="menu1Item">Asistencia</span>
+            </div>
+        </div>
+        <div>
+            <h2>Con Iconos </h2>
+            <div id="menu2" class="menus">
+                <div class="menu2Item">
+                    <i class='fas fa-home fa-2x iconos'></i>
+                    <div class="texto">
+                        <h3>Inicio</h3>
+                        <p>Pagina Principal</p>
+                    </div>
+                </div>
+                <div class="menu2Item">
+                    <i class='fas fa-envelope fa-2x iconos'></i>
+                    <div class="texto">
+                        <h3>Contacto</h3>
+                        <p>Escríbenos aquí</p>
+                    </div>
+                </div>
+                <div class="menu2Item">
+                    <i class='fas fa-dollar-sign fa-2x iconos'></i>
+                    <div class="texto">
+                        <h3>Tienda Virtual</h3>
+                        <p>Adquiere nuestro artículos</p>
+                    </div>
+                </div>
+                <div class="menu2Item">
+                    <i class='fas fa-question-circle fa-2x  iconos'></i>
+                    <div class="texto">
+                        <h3>Asistencia</h3>
+                        <p>¿Necesitas ayuda?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Dropdown Menu</h2>
+            <div id="menu3" class="menus">
+                <ul class="menu-padre">
+                    <li class="menu_item">
+                        <span class="menu_link"> Inicio</span>
+                    </li>
+
+                    <li class="menu_item">
+                        <span class="menu_link"> Nosotros</span>
+                        <ul class="menu-sub">
+                            <li><a class="menu_link " href="#">Misión</a></li>
+                            <li><a class="menu_link " href="#">Visión</a></li>
+                            <li><a class="menu_link " href="#">Valores</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu_item">
+                        <span class="menu_link"> Tienda Virtual</span>
+                        <ul class="menu-sub">
+                            <li><a class="menu_link " href="#">Producto 1</a></li>
+                            <li><a class="menu_link " href="#">Producto 2</a></li>
+                            <li><a class="menu_link " href="#">Producto 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu_item">
+                        <span class="menu_link"> Asistencia</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div>
+            <h2>Redes Sociales</h2>
+            <div id="menu4" class="menus">
+                <i class="fab fa-facebook-f iconos redes"></i>
+                <i class="fab fa-twitter iconos redes"></i>
+                <i class="fab fa-youtube iconos redes"></i>
+                <i class="fab fa-instagram iconos redes"></i>
+                <i class="fab fa-pinterest-p iconos redes"></i>
+            </div>
+        </div>
+
+        <div>
+            <h2>Dropdown Menu con Redes Sociales</h2>
+            <div id="menu5" class="menus">
+                <div id="textoMenu5">
+                    <ul class="menu-padre menuPadre5">
+                        <li class="menu_item itemMenu5">
+                            <span class="menu_link "> Inicio</span>
+                        </li>
+
+                        <li class="menu_item itemMenu5">
+                            <span class="menu_link "> Nosotros</span>
+                            <ul class="menu-sub subMenu5">
+                                <li><a class="menu_link" href="#">Misión</a></li>
+                                <li><a class="menu_link" href="#">Visión</a></li>
+                                <li><a class="menu_link" href="#">Valores</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu_item itemMenu5">
+                            <span class="menu_link "> Tienda Virtual</span>
+                            <ul class="menu-sub subMenu5">
+                                <li><a class="menu_link" href="#">Producto 1</a></li>
+                                <li><a class="menu_link" href="#">Producto 2</a></li>
+                                <li><a class="menu_link" href="#">Producto 3</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu_item itemMenu5">
+                            <span class="menu_link "> Asistencia</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div id="iconosMenu5">
+                    <i class="fab fa-facebook-f iconos tokenMenu5"></i>
+                    <i class="fab fa-twitter iconos tokenMenu5"></i>
+                    <i class="fab fa-youtube iconos tokenMenu5"></i>
+                    <i class="fab fa-instagram iconos tokenMenu5"></i>
+                    <i class="fab fa-pinterest-p iconos tokenMenu5"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+
+
+FROM python:3.9-slim-buster
+
+
+ARG WORKDIR_NAME="/app"
+WORKDIR ${WORKDIR_NAME}
+
+COPY . .
+
+COPY requisitos.txt .
+RUN pip install --no-cache-dir -r fichero
+
+EXPOSE 80 
+
+ENV PERSON_NAME="Nombre de la persona"
+
+CMD ["python", "app.py"]
+
+
+# docker build -t my-image --build-arg PERSON_NAME="Nombre de la persona"
+# docker run -d -p 80:80 --name my-container my-image

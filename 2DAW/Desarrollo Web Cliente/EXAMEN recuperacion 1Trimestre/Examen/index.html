@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte con pixels</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+    <h1>Dibujar con pixels</h1>
+
+    <h3>Selecciona el tamaño del lienzo</h3>
+    <form id="tamanios">
+        Número de filas: <input type="number" id="altoTabla" name="alto" min="1" value="1" required> 
+        Número de columnas: <input type="number" id="anchoTabla" name="ancho" min="1" value="1" required>
+        <input type="submit" id="submit">
+    </form>
+
+    Selecciona un color: <input type="color" id="color">
+
+    <table id="lienzo"></table>
+</body>
+
+</html>

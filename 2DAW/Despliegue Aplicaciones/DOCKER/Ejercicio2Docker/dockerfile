@@ -1,0 +1,20 @@
+# 1. Definir la imagen base
+FROM node:latest
+
+# 2. Establecer el directorio de trabajo en el contenedor
+WORKDIR /app
+
+# 3. Copiar el fichero package.json en el directorio de trabajo
+COPY ./package.json .
+
+# 4. Instalar las dependencias del proyecto
+RUN npm install
+
+# 5. Copiar los archivos de tu proyecto al directorio de trabajo en el contenedor
+COPY . .
+
+# 6. Exponer el puerto en el que tu aplicación estará escuchando
+EXPOSE 80
+
+# 7. Definir el comando para ejecutar la aplicación
+CMD ["node", "server.js"]
